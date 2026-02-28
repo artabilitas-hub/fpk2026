@@ -3,231 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilot Project Artabilitas - FPK 2026</title>
+    <title>Artabilitas - Medium Not Fences (Pilot Project Bekasi)</title>
     <style>
         :root {
             --primary: #2c3e50;
             --accent: #e67e22;
             --light: #f4f7f6;
             --white: #ffffff;
+            --dark-gray: #34495e;
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--primary);
-            background-color: var(--light);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: var(--white);
-            padding: 40px 20px 80px 20px;
-            text-align: center;
-        }
-        .logo-container {
-            width: 130px;
-            height: 130px;
-            background-color: var(--white);
-            margin: 0 auto 20px auto;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border: 4px solid var(--accent);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .logo-container img {
-            max-width: 85%;
-            height: auto;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        .card {
-            background: var(--white);
-            padding: 40px;
-            margin-top: -60px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        h1 { margin: 0; font-size: 2.2em; letter-spacing: 1px; }
-        h2, h3 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 35px; }
-        .tagline { font-style: italic; color: var(--accent); font-weight: bold; font-size: 1.2em; margin-top: 10px; }
-        
-        .profile-box {
-            background: #fdf2e9;
-            border-left: 5px solid var(--accent);
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.95em;
-        }
-        table, th, td { border: 1px solid #ddd; padding: 15px; text-align: left; }
-        th { background-color: #f8f9fa; color: var(--primary); }
-        
-        /* Tombol Portofolio */
-        .btn-portfolio {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        .btn-portfolio:hover {
-            background-color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        .social-links {
-            margin: 25px 0;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 20px;
-            background: #f8f9fa;
-            color: var(--accent);
-            text-decoration: none;
-            border-radius: 30px;
-            border: 1px solid var(--accent);
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .social-links a:hover {
-            background: var(--accent);
-            color: var(--white);
-        }
-        
-        .footer-note {
-            font-size: 1em;
-            background: #f1f3f5;
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 40px;
-            border: 1px dashed #ccc;
-            text-align: center;
-        }
-        .footer-credit {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.85em;
-            color: #7f8c8d;
-            padding-bottom: 30px;
-        }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--primary); background-color: var(--light); margin: 0; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--dark-gray) 100%); color: var(--white); padding: 50px 20px; text-align: center; }
+        .container { max-width: 800px; margin: -30px auto 40px auto; background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.2em; }
+        .tagline { font-style: italic; color: #bdc3c7; margin-bottom: 20px; }
+        h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); }
+        .highlight { color: var(--accent); font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: var(--light); }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; font-size: 0.85em; color: #7f8c8d; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="mb-6 flex justify-center items-center">
+<div class="mb-6 flex justify-center items-center">
 			<a href="https://artabilitas.wixsite.com/artabilitas" target="_blank"> 
                     <img src="logo-artabilitas-4web.jpg" onerror="this.onerror=null; this.src='https://placehold.co/100x100/121212/E5E7EB?text=LOGO';" alt="Logo Artabilitas" class="w-24 h-24 rounded-full mx-auto border-4 border-accentA shadow-lg">
                 </a>
             </div>
-    <h1>Pilot Project Artabilitas</h1>
-    <p class="tagline">"Medium Not Fences" - Melukis Suara melalui Kromestesia</p>
+    <h1>Medium Not Fences</h1>
+    <div class="tagline">Seni sebagai Perantara, Bukan Pagar Pembatas</div>
 </header>
 
 <div class="container">
-    <div class="card">
-        <h2>Profil Pengusul</h2>
-        <div class="profile-box">
-            <strong>Pendidik yang mendalami Seni sebagai Terapi:</strong><br>
-            Fokus pada pendampingan individu neurodivergen untuk mengeksplorasi hubungan antara persepsi sensorik dan ekspresi visual. Melalui pendekatan <em>neuroscience</em>, saya memfasilitasi seni sebagai medium komunikasi yang melampaui kata-kata.
-        </div>
+    <h2>Visi Pilot Project</h2>
+    <p>Sebagai langkah awal gerakan inklusivitas di Jawa Barat, <span class="highlight">"Medium Not Fences"</span> hadir untuk menegaskan bahwa seni adalah media komunikasi yang menembus pagar-pagar stigma terhadap individu neurodivergen.</p>
+    
+    <p>Pameran ini difokuskan sebagai proyek percontohan (<em>Pilot Project</em>) untuk membangun ekosistem seni yang ramah bagi semua kalangan di wilayah Bekasi dan sekitarnya.</p>
+<h2>Metode & Pendekatan</h2>
+<div class="method-section">
+    <p><strong>1. Exhibition (The Chromesthesia Experience):</strong> Menampilkan sinkronisasi visual dan audio. Pengunjung diajak melampaui batas penglihatan biasa dan merasakan bagaimana suara serta warna menyatu dalam satu harmoni ekspresi.</p>
+    
+    <p><strong>2. Workshop (Terapi Seni Kromestesia):</strong> Sesi melukis berbasis musik untuk menstimulasi kreativitas dan kesejahteraan psikologis.</p>
+    
+    <p style="background-color: #fff4e6; padding: 15px; border-radius: 5px; border-left: 5px solid var(--accent);">
+        <strong>Prinsip Inklusivitas:</strong> Workshop ini bersifat terbuka bagi <strong>penyandang disabilitas, individu neurodivergen, maupun masyarakat umum (termasuk dewasa)</strong>. Kami percaya bahwa dengan melukis bersama dalam spektrum Kromestesia, pagar (<em>fences</em>) prasangka akan runtuh dan empati akan tumbuh secara alami melalui pengalaman sensorik yang setara.
+    </p>
+</div>
+    <h2>Rincian Anggaran (Total: Rp20.000.000)</h2>
+    <table>
+        <thead>
+            <tr><th>Komponen</th><th>Alokasi (Rp)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Materi Pameran & Display Inklusif</td><td>6.000.000</td></tr>
+            <tr><td>Workshop Seni Terapi (Peserta Disabilitas)</td><td>5.000.000</td></tr>
+            <tr><td>Publikasi, Katalog & Dokumentasi Digital</td><td>4.000.000</td></tr>
+            <tr><td>Honorarium Narasumber & Pendamping</td><td>3.000.000</td></tr>
+            <tr><td>Operasional & Logistik Kegiatan</td><td>2.000.000</td></tr>
+        </tbody>
+    </table>
 
-        <h2>Visi Kegiatan FPK 2026</h2>
-        <p>Pameran ini mengangkat tema spesifik: <strong>Ekspresi Lukis Kromestesia</strong>. Inisiatif ini menjembatani karya lukis unik dari seniman neurodivergen ke ruang publik di <strong>Bekasi</strong>, menonjolkan bagaimana spektrum suara diterjemahkan menjadi spektrum warna di atas kanvas.</p>
-        
-        <h3>Agenda Kegiatan (4 Hari)</h3>
-        <ul>
-            <li><strong>Pameran Lukis Kromestesia:</strong> Display karya kurasi lukisan akrilik hasil stimulasi auditori.</li>
-            <li><strong>Workshop "Melukis Suara":</strong> Sesi praktik melukis di mana pengunjung diajak menerjemahkan komposisi musik menjadi bentuk dan warna.</li>
-            <li><strong>Dialog Inklusif:</strong> Bedah karya dari perspektif <em>neurodiversity</em> dan estetika kontemporer.</li>
-        </ul>
+    <center>
+        <a href="https://artabilitas-hub.github.io/portofolio/" target="_blank" class="btn">Lihat Portofolio Karya</a>
+    </center>
 
-        <h3>Rencana Anggaran & Biaya (Pagu Rp20 Juta)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Komponen Kegiatan</th>
-                    <th>Detail Peruntukan</th>
-                    <th>Jumlah (Rp)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Materi & Display Lukisan</strong></td>
-                    <td>Bingkai kayu minimalis, panel pajang, dan pencahayaan fokus.</td>
-                    <td>6.000.000</td>
-                </tr>
-                <tr>
-                    <td><strong>Bahan Workshop Melukis</strong></td>
-                    <td>Kanvas, cat akrilik, kuas, dan perangkat stimulasi audio.</td>
-                    <td>4.000.000</td>
-                </tr>
-                <tr>
-                    <td><strong>Publikasi & Dok.</strong></td>
-                    <td>Katalog digital, video proses kreatif, dan kampanye media.</td>
-                    <td>4.000.000</td>
-                </tr>
-                <tr>
-                    <td><strong>Honorarium Tim Pelaksana</strong></td>
-                    <td>Pendidik pendamping, asisten workshop, dan narasumber.</td>
-                    <td>3.000.000</td>
-                </tr>
-                <tr>
-                    <td><strong>Logistik & Operasional</strong></td>
-                    <td>Transportasi karya (antar wilayah) dan konsumsi tim.</td>
-                    <td>3.000.000</td>
-                </tr>
-                <tr>
-                    <td><strong>TOTAL</strong></td>
-                    <td><strong>Sesuai Ketentuan Pagu Bantuan FPK 2026</strong></td>
-                    <td><strong>20.000.000</strong></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Rekam Jejak & Validasi</h3>
-        <p>Konsistensi gerakan Artabilitas sejak 2014 menjadi bukti dedikasi kami dalam pemajuan kebudayaan inklusif:</p>
-        <ul>
-            <li><strong>2014:</strong> Pameran "Langkah Awal" - Galeri Aprilia, Jakarta.</li>
-            <li><strong>2018:</strong> Pameran Fotografi "Selamat Datang di Duniaku" - Galeri Foto Jurnalistik Antara.</li>
-        </ul>
-        
-        <a href="https://artabilitas-hub.github.io/portofolio/" target="_blank" class="btn-portfolio">
-            Lihat Portofolio Lengkap & Dokumentasi Karya
-        </a>
-
-        <div class="footer-note">
-            <p><strong>Hubungi & Ikuti Gerakan Kami:</strong></p>
-            <div class="social-links">
-                <a href="https://artabilitas.wixsite.com/artabilitas" target="_blank">Website Wix</a>
-                <a href="https://www.instagram.com/artfulriot" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/artabilitas" target="_blank">Facebook</a>
-            </div>
-            <p style="margin-top: 15px;">Mari merayakan keberagaman cara manusia melihat dunia melalui setiap goresan warna.</p>
-        </div>
-        
-        <div class="footer-credit">
-            © 2026 Artabilitas Hub - Dokumen Pendukung Fasilitasi Pemajuan Kebudayaan BPK Wilayah IX
-        </div>
+    <div class="footer">
+        <p><strong>Pengusul:</strong> Achmad Eko Wibowo (Alumni Seni Rupa ITB)</p>
+        <p>Dokumen Pendukung Fasilitasi Pemajuan Kebudayaan - BPK Wilayah IX Jawa Barat</p>
+        <p>© 2026 Artabilitas Hub. Merayakan keberagaman melalui ekspresi.</p>
     </div>
 </div>
 
