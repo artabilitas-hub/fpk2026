@@ -54,37 +54,47 @@
     </p>
 </div>
 	<style>
-    .audio-card {
-        background: #fdfdfd;
-        border: 1px dashed var(--accent);
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 10px;
+    .audio-section {
+        background: #f9f9f9;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 20px 0;
         text-align: center;
+        border: 1px solid #eee;
     }
-    audio {
-        width: 100%;
-        margin-top: 10px;
+    .audio-button {
+        display: inline-block;
+        background-color: #2d5a27; /* Hijau tua yang rendah hati */
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        margin: 10px;
+        transition: 0.3s;
     }
-    .audio-hint {
-        font-size: 0.8em;
-        color: #7f8c8d;
-        margin-top: 5px;
+    .audio-button:hover {
+        background-color: #3e7a36;
+        transform: scale(1.05);
+    }
+    .hint {
+        font-size: 0.9em;
+        color: #666;
+        font-style: italic;
     }
 </style>
 
-<div class="audio-card">
-    <h3>🎧 Chromesthesia Experience</h3>
-    <p>Silakan gunakan <em>earphone</em> Anda untuk mendengarkan warna dalam karya ini.</p>
+<div class="audio-section">
+    <h3>🎧 Chromesthesia Audio Experience</h3>
+    <p>Dengarkan sinkronisasi suara dan warna melalui koleksi audio kami:</p>
     
-    <audio controls>
-        <source src="audio/karya1.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung pemutar audio.
-    </audio>
+    <a href="https://drive.google.com/drive/folders/1sLKuyh4SMCUgkWJgWJlkJSyGocJjFfZg" 
+       target="_blank" class="audio-button">
+       Mulai Mendengarkan (Google Drive)
+    </a>
     
-    <div class="audio-hint">
-        *Putar audio sambil memperhatikan sapuan warna pada kanvas.
-    </div>
+    <p class="hint">*Gunakan earphone untuk pengalaman yang lebih mendalam.</p>
+</div>
 </div>
     <h2>Rincian Anggaran (Total: Rp20.000.000)</h2>
     <table>
